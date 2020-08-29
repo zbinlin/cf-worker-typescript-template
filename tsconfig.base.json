@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "ESNext",
+        "moduleResolution": "node",
+        "lib": ["ESNext", "webworker"],
+        "allowJs": false,
+
+        "strict": true,
+
+        "esModuleInterop": true,
+
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "types": [
+            "@cloudflare/workers-types"
+        ],
+        "noEmit": true
+    }
+}

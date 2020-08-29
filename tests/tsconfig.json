@@ -1,0 +1,14 @@
+{
+    "extends": "../tsconfig.base.json",
+    "compilerOptions": {
+        "noEmit": true,
+        "types": [
+            "@cloudflare/workers-types",
+            "@types/jest"
+        ],
+        "baseUrl": ".",
+        "paths": {
+            "~/*": ["../src/*"]
+        }
+    }
+}

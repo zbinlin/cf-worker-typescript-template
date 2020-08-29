@@ -1,0 +1,53 @@
+{
+    "name": "{{ project-name }}",
+    "version": "1.0.0",
+    "description": "A template for kick starting a Cloudflare Workers project",
+    "private": true,
+    "main": "worker/script.js",
+    "scripts": {
+        "test": "jest",
+        "lint": "eslint '*.js' src tests",
+        "prebuild": "npm run lint && npm run test",
+        "build": "wrangler build",
+        "dev": "wrangler preview --watch"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/zbinlin/cf-worker-typescript-template.git"
+    },
+    "keywords": [
+        "cf",
+        "cloudflare-worker",
+        "cloudfalre-workers",
+        "cloudfalre-worker-template",
+        "cloudfalre-worker-typescript-template"
+    ],
+    "author": "{{ authors }}",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/zbinlin/cf-worker-typescript-template/issues"
+    },
+    "homepage": "https://github.com/zbinlin/cf-worker-typescript-template#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "@babel/core": "^7.11.4",
+        "@babel/preset-env": "^7.11.0",
+        "@babel/preset-typescript": "^7.10.4",
+        "@cloudflare/workers-types": "^2.0.0",
+        "@cloudflare/wrangler": "^1.11.0",
+        "@types/jest": "^26.0.10",
+        "@types/node": "^14.6.2",
+        "@types/service-worker-mock": "^2.0.1",
+        "@typescript-eslint/eslint-plugin": "^3.10.1",
+        "@typescript-eslint/parser": "^3.10.1",
+        "@zbinlin/eslint-config": "^3.3.0",
+        "babel-jest": "^26.3.0",
+        "eslint": "^7.7.0",
+        "eslint-import-resolver-typescript": "^2.2.1",
+        "eslint-plugin-import": "^2.22.0",
+        "jest": "^26.4.2",
+        "service-worker-mock": "^2.0.5",
+        "ts-loader": "^8.0.3",
+        "typescript": "^4.0.2"
+    }
+}
